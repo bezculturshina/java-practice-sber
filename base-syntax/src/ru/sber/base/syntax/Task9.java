@@ -12,7 +12,7 @@ public class Task9 {
         while (true) {
             System.out.println("Введите букву (a - z): ");
             String a = scan.nextLine().toUpperCase();
-            int q = (int) a.charAt(0);
+            int q = a.charAt(0);
             if (q < 65 || q > 90 || a.length() != 1) {
                 System.out.println("Введен недопустимый символ");
             } else if (q < code) {
@@ -23,7 +23,7 @@ public class Task9 {
                 System.out.println("Верно!");
                 break;
             }
-//            System.out.println(a + " " + q + " " + code);
+            System.out.println(a + " " + q + " " + code);
         }
     }
 }
